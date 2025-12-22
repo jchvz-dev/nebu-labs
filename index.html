@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>nebu-labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #0f1115;
+      --text-color: #e6e6e6;
+      --accent-color: #8ab4f8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+
+    p {
+      font-size: clamp(1rem, 4vw, 1.25rem);
+      font-weight: 300;
+      opacity: 0.85;
+    }
+
+    /* Optional subtle divider */
+    .divider {
+      width: 60px;
+      height: 2px;
+      background-color: var(--accent-color);
+      margin: 1.5rem auto;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello world!</h1>
-  <p>nebu-labs is live 🎉</p>
+  <div class="container">
+    <h1>nebu-labs</h1>
+    <div class="divider"></div>
+    <p>Under construction</p>
+  </div>
 </body>
 </html>
